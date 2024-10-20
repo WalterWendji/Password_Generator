@@ -1,0 +1,88 @@
+body {
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1F2937;
+    width: 550px;
+    height: 550px;
+    padding: 0 52px;
+
+}
+
+.firstBlock {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    
+    padding-bottom: 35px;
+    border-bottom: 1px solid #2F3E53;
+}
+
+.firstBlock div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h2 {
+    font-family: Karla;
+    width: 364px;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+h2 span {
+    color: #4ADF86;
+}
+
+p {
+    font-family: Inter;
+    font-weight: 400;
+    color: #D5D4D8;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+button {
+    height: 42px;
+    width: 191px;
+    background-color: #10B981;
+    border: none;
+    border-radius: 6px;
+    font-weight:500;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    cursor: pointer;
+    margin-top: 35px;
+
+}
+
+.password-block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+
+.password {
+    font-family: Inter;
+    font-weight: 500;
+    width: 211px;
+    height: 39px;
+    background-color: #273549;
+    border-radius: 6px;
+    color: #55F991;
+    text-align: center;
+    font-size: 16px;
+
+}
