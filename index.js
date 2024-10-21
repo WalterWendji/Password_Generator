@@ -11,7 +11,6 @@ genPasswdEl.addEventListener("click", function () {
 
 });
 
-
 function generatePassword() {
     let password = ""
     for (let i = 0; i < 14; i++) {
@@ -20,3 +19,26 @@ function generatePassword() {
     }
     return password
 }
+
+firstPasswdEl.onclick = function() {
+    document.execCommand("copy")
+}
+
+secondPasswdEl.onclick = function() {
+    document.execCommand("copy")
+}
+
+firstPasswdEl.addEventListener("copy", function(event){
+    event.preventDefault();
+    if (event.clipboardData) {
+        event.clipboardData.setData("text/plain", firstPasswdEl.textContent)
+        console.log(event.clipboardData.getData("text"))
+    }
+})
+secondPasswdEl.addEventListener("copy", function(event){
+    event.preventDefault();
+    if (event.clipboardData) {
+        event.clipboardData.setData("text/plain", secondPasswdEl.textContent)
+        console.log(event.clipboardData.getData("text"))
+    }
+})

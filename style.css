@@ -88,5 +88,9 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
 
+.password:active {
+    background-color:#405066;
 }
