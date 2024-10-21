@@ -4,6 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
+    background-color: #1C1C1C;
 
 }
 
@@ -84,5 +85,8 @@ button {
     color: #55F991;
     text-align: center;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
