@@ -20,22 +20,22 @@ function generatePassword() {
     return password
 }
 
-firstPasswdEl.onclick = function() {
+firstPasswdEl.onclick = function () {
     document.execCommand("copy")
 }
 
-secondPasswdEl.onclick = function() {
+secondPasswdEl.onclick = function () {
     document.execCommand("copy")
 }
 
-firstPasswdEl.addEventListener("copy", function(event){
+firstPasswdEl.addEventListener("copy", function (event) {
     event.preventDefault();
     if (event.clipboardData) {
         event.clipboardData.setData("text/plain", firstPasswdEl.textContent)
         console.log(event.clipboardData.getData("text"))
     }
 })
-secondPasswdEl.addEventListener("copy", function(event){
+secondPasswdEl.addEventListener("copy", function (event) {
     event.preventDefault();
     if (event.clipboardData) {
         event.clipboardData.setData("text/plain", secondPasswdEl.textContent)
